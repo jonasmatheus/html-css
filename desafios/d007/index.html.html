@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Minha imagem dinâmica</h1>
+
+    <h2>Criando minhas imagens dinâmicas</h2>
+
+    <picture>
+        <source media="(max-width: 550px)" srcset="minhasfotos/Minha-foto-300px.jpg" type="image/jpg">
+        <source media="(max-width: 900px)" srcset="minhasfotos/Minha-foto-500px.jpg" type="image/jpg"> <!--Adicionei mais um source para avaliar com outros tamanhos de tela-->
+        <source media="(max-width: 1050px)" srcset="minhasfotos/Minha-foto-750x750px.jpg" type="image/jpg">
+        <img src="minhasfotos/Minha-foto-1000px.jpg" alt="Minha imagem dinâmica principal">
+    </picture>
+    <p>Criei minha imagem dinamica para vários tamanhos de tela.</p>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Criando listas em HTML</h1>
+    <h2>Listas Ordenadas:</h2>
+    <ol type = "a"> <!--1 A a I i -->
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Arrumar a casa</li>
+        <li>Arrumar o almoço</li>
+    </ol>
+    <ol type = "1" start="5">
+        <li>Estudar novamente</li>
+        <li>Aprender HTML</li>
+        <li>Parar um pouco, jamais</li>
+    </ol>
+    <ul type = "circle"> <!-- disc circle square -->
+        <li>Fígado</li>
+        <li>Peixe</li>
+        <li>Bisteca</li>
+        <li>Carne</li>
+        <li>Linguiça</li>
+    </ul>
+    <h2>Juntando listas</h2>
+    <h3> Preciso dos seguintes itens para ser um Dev Front-end</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <ol type="a">
+             <li>React</li>
+             <li>React Native</li>
+
+        </ol>
+    </ol>
+    <h2>Lista dos meus Jogos Favoritos:</h2>
+    <ul>
+        <li>Nitendinho</li>
+        <ol>
+            <li>Mario Bros</li>
+            <ul type = "square">
+                <li>Super Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninga Gaiden</li>
+            <ul type = "square">
+                <li>Ninja Gaiden III</li>
+            </ul>
+        </ol>
+        <li>Super Nitendo</li>
+        <ol>
+            <li>Super Mario Word</li>
+            <li>Donkey Kong</li>
+            <ul type = "square">
+                <li>Donkey Kong Counrtry III</li>
+                <li>Diddy's Kong Quest</li>
+            </ul>
+        </ol>
+        <li>Playstation 1</li>
+        <ol>
+            <li>Final Fantasy</li>
+            <ul type  = "circle">
+                <li>Final Fantasy VII</li>
+                <li>Final Fantasy IX</li>
+            </ul>
+            <li>Castlevania</li>
+            <ul type  = "disc">
+                <li>Simphony of the Night</li>
+            </ul>
+        </ol>
+    </ul>
+    <h2>Lista de Definições:</h2>
+
+    <!--Toda lista de definições está dentro de uma tag <dl> </dl> (definition list) Cada termo é um <dt> (definition term) e cada descrição é um <dd> (definition description). Assim como os itens da lista, essas duas últimas tags possuem fechamento opcional, segundo a referência oficial da HTML5.-->
+        <dl>
+           <dt><strong>HTML</strong></dt>
+           <dd>Linguagem de marcação utilizada para crir o conteúdo de sites.</dd>
+           <dt><em>CSS</em></dt>
+           <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+           <dt><ins>JavaScript</ins></dt>
+           <dd>Linguagem de programação para criar interatividades em sites.</dd>
+        </dl>
+</body>
+</html>

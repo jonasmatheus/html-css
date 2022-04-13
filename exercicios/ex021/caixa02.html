@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #1F2F5C;
+            box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.405);
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #90A6E1;
+            margin: 0px;
+        }
+        header{
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(201, 210, 230);
+            text-align: center;
+            box-shadow: 1px 2px 5px 2px rgb(0 0 0 / 51%)
+        }
+        nav > a{
+            color: #072c92;
+            text-decoration: none;
+            font-weight: lighter;
+            margin-right: 20px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.508);
+        }
+        #principal{
+            background-color: #1F2F5C;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .titulosart{
+            background-color: rgb(215, 224, 250);
+            padding: 5px;
+            text-align: center;
+            border: 2px solid rgb(123, 123, 165)
+        }
+        article{
+            background-color: #b4c5f3;  
+            padding: 2px; 
+        }
+        article > aside{
+            background-color: #2d4379; 
+            padding: 5px;
+            color: white;
+        }
+        aside{
+            background-color: #3B445C;
+            color: antiquewhite;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+        #periferico{
+            font-weight: bold;
+        }
+        footer{
+            background-color: #1F2F5C;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 10px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header> <!--Cabeçalho-->
+        <h1>Minha Estrutura de Site</h1>
+        <nav> <!--Navegação-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main> <!--Conteudo principal-->
+        <section id="assuntos">
+            <h2 id="principal">Criando uma sessão</h2>
+            <p>Esporte politicas e noticias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2 class="titulosart">Titulo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla rerum illum esse animi laudantium perferendis amet qui labore autem tempora hic velit molestiae, vitae atque magni optio vel! Deleniti.</p>
+                <h2 class="titulosart">Titulo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores neque, in tempore suscipit voluptate quisquam deleniti quos sed. Est, a sapiente veritatis perspiciatis alias soluta molestias ducimus nemo eius! Non!</p>
+                <aside>
+                    Autor do artigo: [...]
+                </aside>
+            </article>
+        </section>
+        <aside>
+            <p id="periferico">Conteúdo periférico do site.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illum numquam eum consectetur earum iste eveniet vero sit? Omnis, voluptate libero cum quos voluptatem temporibus adipisci quasi recusandae. Dolore, explicabo.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvolvido por Jonas Matheus</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

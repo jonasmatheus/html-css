@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com HTML5</title>
+    <style>
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgba(150, 3, 3, 0.774);
+            text-align: center;
+        }
+        body{
+            background-image: linear-gradient(to right, #997a7a, #b45970);
+        }
+        form{
+            /* Apenas para centralizar o form da página */
+            margin: 0 auto;
+            width: 500px;
+            /*Para ver as bordas do formulário */
+            padding: 2em;
+            border: 1px solid rgb(43, 2, 34);
+            border-radius: 1em;
+        }
+        form div + div {
+            margin-top: 1em;
+        }
+        label{
+            /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas*/
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        input, textarea {
+            /*Para certificar-se que todos os campos de texte têm as mesmas configurações de fonte. Por padrão, textareas tem uma fonte monospace*/
+            font: 1em sans-serif;
+            /*Para dar o mesmo tamanho a todos os campos de texto*/
+            width: 350px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            /*Para harmonizar o look & feel das bordas nos campos de texto*/
+            border: 1px solid rgb(43, 2, 34);
+        }
+        input:focus, textarea:focus {
+            /* Dar um pouco de destaque nos elementos ativos */
+            border-color: #000;
+        }
+        textarea{
+            /*Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+            vertical-align: middle;
+            /*Para dar espaço suficiente para digitar algum texto*/
+            height: 3em;
+            /*Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos browsers*/
+            resize: vertical;
+        }
+        .button {
+            /*Para posicionar os botôes para a mesma posiçaõ dos campos de texto*/
+            padding-left: 100px; /*mesmo tamanho que os elementos do tipo label*/
+        }
+        button{
+            /*Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+            margin-left: .5em;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Formulários com HTML5 e CSS3:</h1>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="usuario_nome" />
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="usuario_email" />
+        </div>
+        <div>
+            <label for="msg">Mensagem:</label>
+            <textarea name="usuario_msg" id="msg"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit">Enviar sua mensagem</button>
+        </div>
+    </form>
+</body>
+</html>
