@@ -11,8 +11,16 @@
         }
 
         table {
-            width: 500px;
+            width: 450px;
             border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aquamarine;
+            border: 1px solid black;
         }
 
         td, th {
@@ -24,6 +32,15 @@
             background-color: gray;
             color: white;
         }
+
+        td.num{
+            text-align: right;
+        }
+
+        td.pos{
+            color: blue;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +49,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION (legenda da tabela)
             THEAD
                 TR, TD, TH
             TBODY
@@ -40,14 +58,21 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption> <!--Devido a semântica da HTML5, posso colocá-lo em "qualquer lugar" na tabela-->
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População (2021)</th>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População (2021)</th>
             </tr>
-
         </thead>
+        <tfoot> <!--Posso colocar o tfoot em "qualquer lugar" na tabela, devido a semântica da HTML5 os navegaores entendem onde deve ficar o rodapé da tabela-->
+            <tr>
+                <td> </td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>213.317.639</strong></td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
                 <td class="pos">1</td>
@@ -186,14 +211,7 @@
             </tr>
 
         </tbody>
-        <tfoot>
-            <tr>
-                <td> </td>
-                <th>Total de Habitantes</th>
-                <td>000</td>
-            </tr>
 
-        </tfoot>
     </table>
     
 </body>
